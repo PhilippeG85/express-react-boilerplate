@@ -8,10 +8,6 @@ app.listen(port, () => console.log(`Lisstening on port ${port}`));
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, './client/build')));
 
-app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" });
-});
-
 
 app.get('/express_backend', (req, res) => {
   res.send({ express: 'Your express backend is connected to react' });
