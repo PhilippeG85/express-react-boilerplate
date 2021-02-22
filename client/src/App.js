@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch('/express_backend')
+    fetch('/.netlify/functions/server/api/hello')
       .then(res => res.json())
       .then(data => setData({ data: data.express}));
   }, []);
