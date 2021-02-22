@@ -10,8 +10,8 @@ netlify.toml
 /coverage
 
 # production
-/build
-/functions
+build/
+functions/
 
 # misc
 .DS_Store
